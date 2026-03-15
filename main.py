@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-# Parametry
-size = 10  # Dla testów - potem 200
+# Parameters
+size = 200  # grid size
 empty_ratio = 0.1
 tolerance = 0.20
 max_iters = 500
 
-# Reprezentacja agentów
+# Agents representation
 EMPTY = 0
 RED = 1
 GREEN = 2
@@ -92,7 +92,7 @@ def plot_grid(grid):
     plt.axis('off')
     plt.show()
 
-# Główna symulacja
+# Main simulation
 grid = create_grid(size, empty_ratio)
 plot_grid(grid)
 grid = simulate(grid, tolerance, max_iters)
