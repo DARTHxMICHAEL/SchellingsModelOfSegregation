@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import random
 
 # Parameters
-size = 200  # grid size
+size = 10  # grid size
 empty_ratio = 0.1
 tolerance = 0.20
 max_iters = 500
